@@ -1,0 +1,453 @@
+/****** STANDARD CSS ******/
+body{
+	position: relative;
+
+}
+
+.page{
+	margin: 30px 0;
+}
+
+a{
+    color: #FBC424;
+    text-decoration: none;
+}
+
+a:hover{
+	color: #FBC424;
+	text-decoration: underline;
+}
+
+.parallax{
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/****** HEADER ******/
+
+#header{
+	height: 100vh!important;
+    min-height: 400px;
+}
+
+#header .navbar-brand{
+	color: white;
+}
+
+#header .navbar-default {
+	background-color: #5a432b;
+	border: 0;
+}
+
+#header .navbar-toggle:hover{
+	background-color: #FBC424;
+}
+
+#header .navbar-toggle:hover .icon-bar{
+	background-color: white;
+}
+
+#header .navbar-default .navbar-nav li{
+	margin-right: 15px;
+}
+
+#header .navbar-default .navbar-nav a{
+	color: white;
+	padding: 15px 8px;
+	text-transform: uppercase;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#header .navbar-default .navbar-nav .active a{
+	font-weight: 700;
+	background-color: #FBC424;
+	text-shadow: none;
+}
+
+#header .navbar-default .navbar-nav a:hover{
+	background-color: #FBC424;
+}
+
+.hero-img{
+    /* The image used */
+    background-image: url("../img/hero-background3.jpg");
+    /* Set a specific height */
+    height: 100%;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+
+}
+
+/* Place text in the middle of the image */
+.hero-title-container {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 100px;
+}
+
+.hero-title-container .hero-title{
+	font-size: 0.65em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    background: #FBC424;/*#5a432b;*/
+    padding: 0 18px;
+}
+
+.hero-title-container .hero-subtitle {
+    display: inline-block;
+    background: white;
+    color: #FBC424;
+    font-size: 0.35em;
+    padding: 0 15px;
+}
+
+#header .bottom {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+}
+
+#header .bottom a{
+    color: white;
+    font-size: 4rem;
+    position: relative;
+}
+
+.section-title {
+    font-size: 4rem;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lead {
+    font-size: 1.8rem;
+    line-height: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #2e2e2e;
+    position: relative;
+}
+
+.lead:after {
+    position: absolute;
+    content: ' ';
+    background: #FBC424;
+    width: 80px;
+    height: 3px;
+    bottom: -22px;
+    left: 50%;
+    margin-left: -40px;
+}
+
+.main.lead {
+    margin-bottom: 80px;
+}
+
+.text-center{
+	text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+	.hero-title-container {
+		font-size: 60px;
+	}
+}
+/****** ABOUT ******/
+
+
+.about-text{
+	color:white;
+	background-color: #FBC424;
+	overflow: hidden;
+}
+
+.icon-wrapper{
+	font-size: 70px;
+	text-align: center;
+	color: #FBC424;
+}
+
+/****** FACTS ******/
+
+#facts{
+	position:relative;
+	height: 400px; 
+	background-image: url("../img/hero-background4.jpg");
+	color: #fff;
+}
+
+#facts:before{
+    content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(rgba(10, 10, 10, 0.5), rgba(10, 10, 10, 0.5));
+        opacity: .6; 
+}
+
+.facts-container{
+	margin: 110px 0 0 0;
+}
+
+.icon-fact-container{
+	font-size: 80px;
+}
+
+.fact-header{
+	font-size: 3rem;
+}
+
+.fact-content{
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+@media only screen and (max-width: 768px) {
+	#facts{
+		height: 900px; 
+	}
+
+	.facts-container{
+		margin: 50px 0 ;
+	}
+
+	.icon-fact-container{
+		font-size: 80px;
+	}
+
+	.fact-header{
+		font-size: 3rem;
+	}
+
+	.fact-content{
+		font-size: 1.5rem;
+		text-transform: uppercase;
+	}
+}
+
+/****** BAR CATEGORIES ******/
+
+.nutrition-bar-category{
+    background-color: #5a432b;
+    border: none;
+    color: white;
+    font-weight: 400;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.active-bar-category, .nutrition-bar-category:hover{
+	background-color: #FBC424;
+}
+
+.filter-list{
+	margin: 0 0 6rem 0;
+	text-align: center;
+}
+
+.nutrition-bar-title{
+	text-align: center;
+}
+.nutrition-bar-link-container{
+	text-align: center;
+}
+
+.nutrition-bar-item{
+	/*
+	margin: 10px 0;
+	padding: 50px 0;
+	min-height: 350px;
+	*/
+}
+
+.nutrition-bar-item .bar-more{
+	margin-bottom: 10px;
+	font-size: 1rem;
+	background-color: #FBC424;
+	border-radius: 0;
+}
+
+.product-description{
+	padding: 1.5rem 1rem;
+	background-color: #FBF9E7;
+	color: #736458;
+}
+
+.ingredients-header, .description-header, .benefits-header, .product-info-header{
+	color: #5a432b;
+	font-weight: 700;
+}
+
+/*
+#nutrition-bar-apricot, #nutrition-bar-unknown{
+	height: 343px;
+}
+
+#nutrition-bar-apricot img, #nutrition-bar-unknown img{
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+*/
+
+@media only screen and (max-width: 630px) {
+	.nutrition-bar-category{
+		display: block;
+	}
+}
+
+
+/****** FAQ ******/
+#faq{
+	background-color: #FBC424;
+	color: white;
+	padding-bottom: 2rem;
+}
+
+#faq .lead.main {
+	color: white;
+}
+
+#faq .lead:after {
+	background: white;
+}
+
+.faq-main-text{
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+.faq-question {
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 2rem 0 1rem 0;
+}
+
+
+
+
+/****** CONTACT ******/
+.contact-email, .contact-phone, .contact-address{
+	font-weight: 700;
+	font-size: 1.8rem;
+	color: #5a432b;
+}
+
+.email-address{
+	text-align: left;
+}
+.phone-number{
+	text-align: center;
+}
+.address{
+	text-align: right;
+}
+
+#g-map{
+	height: 400px;
+	width: 100%;
+}
+@media only screen and (max-width: 768px) {
+	.email-address, .phone-number, .address{
+		text-align: center;
+	}
+}
+/****** FOOTER ******/
+
+#main-footer{
+	background-color: #5a432b;
+	color: white;
+	padding: 3rem 0;
+}
+
+.social-bar {
+    width: 100%;
+    text-align: right;
+}
+
+.social-bar a {
+    display: inline-block;
+    margin-right: 11px;
+    font-size: 2.15em;
+    text-decoration: none;
+    color: #FBC424;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.social-bar a:hover{
+    color: white;
+}
+
+.theme-by {
+    color: #FBC424;
+    background: white;
+    text-transform: uppercase;
+    padding: 0 0.5rem;
+    font-weight: 700;
+}
+
+.theme-by:hover{
+	text-decoration: underline;
+	color:#FBC424;
+}
+
+@media only screen and (max-width: 768px) {
+	.social-bar{
+		margin-top: 2rem;
+		text-align: center;
+	}
+	.copyright-container{
+		text-align: center;
+	}
+}
+
+/****** MISCELLANEOUS ******/
+.btn{
+	display: inline-block;
+    cursor: pointer;
+    background: #b42121;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.75em 0.5em;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 800;
+    /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    font-size: 1.5em;
+}
+
+.btn:hover, .btn:visited{
+	color: #fff;
+	text-decoration: none;
+	box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.4);
+}
+
+.faq-btn{
+	background: #5a432b;
+	width: 320px;
+}
